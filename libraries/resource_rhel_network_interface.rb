@@ -127,6 +127,10 @@ class Chef
         def ovsdhcpinterfaces(arg = nil)
           set_or_return(:ovsdhcpinterfaces, arg, kind_of: [String, Array])
         end
+
+        def ethtool_opts(arg = nil)
+          set_or_return(:ethtool_opts, arg, kind_of: [String])
+        end
       end
     end
   end
